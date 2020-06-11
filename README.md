@@ -81,7 +81,7 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
     !                                                               !	
     +---------------------------------------------------------------+
 	
-Beschreibung
+`Beschreibung`
 
 * Web Server mit Apache und MySQL UserInterface [Adminer](https://www.adminer.org/)
 * Datenbank Server mit MySQL
@@ -92,12 +92,14 @@ Beschreibung
 
 
 
-Tests
+`Tests`
 
 * Erstes Testfall 
-    * da
+    * Wir überprüfen, als erstes, ob wir eine SSH-Verbindung auf die machen können auf die VM's.
 
-Sicherheit
+    ![SSHDB](https://paste.pics/99PXM)
+
+`Sicherheit`
 
 * Datenbank Server bzw. MySQL ist mit Password geschützt.
 * Der Web Server ist offen und mittels ungeschütztem HTTP Protokoll erreichbar.
