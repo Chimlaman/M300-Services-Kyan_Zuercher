@@ -54,7 +54,55 @@ vagrant halt -f
 vagrant destroy -f
 ```
 Der "Vagrant up" Befehl erstellt die VM's die im Vagrantfile angegeben sind. Das Erstellen der VM's dauert eine gewisse Zeit. Danach sollte man mit dem "Vagrant Status", denn Status überprüfen, ob alles einwandfrei funktioniert hat. Mit dem Befehl "Vagrant ssh <Name der VM>" kann man direkt eine Verbindung per SSH aufbauen, danach kann man alle Information von der VM beziehen wie z. B. die OS Version der zugewiesene Port für die Webseite usw. Der Befehl "Vagrant halt -f" schaltet alle VM's aus, sprich fährt sie herunter. Der "Vagrant destroy -f" löscht alle erstelle VM's durch Vagrant, somit ist es sehr einfach alle wieder zu löschen.
+
 ---
+**Dokumentation Umgebung**
+
+`Umgebungs-Variablen`
+
+Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem, die meist Pfade zu bestimmen Programme oder Daten enthalten. 
+
+
+
+`Netzwerkplan`
+
+
+    +---------------------------------------------------------------+
+    ! Notebook - Privates Netz 192.168.55.1 !                 
+    ! Port: 8080 (192.158.55.101:80)                                !	
+    !                                                               !	
+    !    +--------------------+          +---------------------+    !
+    !    ! Web Server         !          ! Datenbank Server    !    !       
+    !    ! Host: web01        !          ! Host: db01          !    !
+    !    ! IP: 192.168.55.101 ! <------> ! IP: 192.168.55.100  !    !
+    !    ! Port: 80           !          ! Port 3306           !    !
+    !    ! Nat: 8080          !          ! Nat: -              !    !
+    !    +--------------------+          +---------------------+    !
+    !                                                               !	
+    +---------------------------------------------------------------+
+	
+Beschreibung
+
+* Web Server mit Apache und MySQL UserInterface [Adminer](https://www.adminer.org/)
+* Datenbank Server mit MySQL
+    * Das MySQL User Interface ist via [http://localhost:8080/adminer.php](http://localhost:8080/adminer.php) mit User/Password: root/admin erreichbar.
+
+* Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
+* Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
+
+
+
+Tests
+
+* Erstes Testfall 
+    * da
+
+Sicherheit
+
+* Datenbank Server bzw. MySQL ist mit Password geschützt.
+* Der Web Server ist offen und mittels ungeschütztem HTTP Protokoll erreichbar.
+
+
 
 
 [1]: https://stackoverflow.com/ "Stackoverflow"
