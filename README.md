@@ -1,6 +1,6 @@
 # M300-Services-Kyan_Zuercher
-## Dieses Projekt ist ein bestandteil vom Modul 300 und gehört zur LB02. Hier werden die Dokumentation / Wissenstände und Tipps & Tricks eingetragen.
-
+## Hier werden die Dokumentation / Wissenstände und Tipps & Tricks eingetragen. 
+---
 **Persönlicher Wissenstand**
 * Linux
 
@@ -18,8 +18,30 @@
 * Systemsicherheit
 
     * Es gibt viele Systemsicherheiten die man mit Vagrant und Git hat, denn es ist auch wichtig das man diese Sicherheit hat. In Vagrant selbst hat man die Möglichkeit alle Passwort zu schützen oder auch im Internet Sicherheit zu gewährleistet mit einer Firewall. Auf Git hat man nur die Möglichkeit änderungen zu machen, wenn der Benutzer auch wirklich Berechtigung hat.
+---
+**Versionverwaltung**
+| Version| Kommentar| 
+| ------ | ----------- |
+| Version 1  | Persönlicher Wissenstand eingefügt |
+| Version 2 | Design & Wichtige Lernschritte (Git) eingefügt |
+| Version 3   | Wichtige Lernschritte (Vagrant) eingefügt |
 
+---
 **Wichtige Lernschritte**
 
+Es gibt einige wichtige Schritte die während der Installation und der Konfiguration gebraucht wurden:
 
-    [1]: https://stackoverflow.com/ "Stackoverflow"
+`Git`
+
+Ich musste zuerste die "Basics" lernen wie z. B. etwas "Commiten" und "pushen", sodass es auf der Github-Seite angezeigt wird.
+```
+git commit -a "Kommentar" <Filename>
+git push
+git status
+```
+Der Commit Befehl lädt alle die Daten und der Push Befehl kopiert es auf die Gitseite. Der Gitstatus ist auch ein sehr wichtiger Befehl, denn mit diesem kann man immer überprüfen, ob es noch Probleme gibt.
+
+
+
+
+[1]: https://stackoverflow.com/ "Stackoverflow"
