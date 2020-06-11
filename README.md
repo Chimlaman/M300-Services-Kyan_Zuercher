@@ -26,6 +26,7 @@
 | Version 2 | Design & Wichtige Lernschritte (Git) eingefügt |
 | Version 3   | Wichtige Lernschritte (Vagrant) eingefügt & Befehle |
 | Version 4   | Dokumentation Umgebung (Netzwerkplan, Sicherheitsaspekte usw.)|
+| Version 5   | Dokumentation weitergemacht & Screenshots eingefügt|
 
 ---
 **Wichtige Lernschritte**
@@ -81,7 +82,10 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
     !                                                               !	
     +---------------------------------------------------------------+
 	
+---
+
 `Beschreibung`
+
 
 * Web Server mit Apache und MySQL UserInterface [Adminer](https://www.adminer.org/)
 * Datenbank Server mit MySQL
@@ -90,14 +94,51 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
 * Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
 * Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
 
-
+----
 
 `Tests`
 
+
 * Erstes Testfall 
     * Wir überprüfen, als erstes, ob wir eine SSH-Verbindung auf die machen können auf die VM's.
+    
+    Zuerst auf dem Datenbank-Server:
 
-    ![SSHDB](https://paste.pics/99PXM)
+    ![SSHDB](Screenshots/SSH-DB.png)
+
+    Nun auf dem Web-Server:
+
+    ![SSHWEB](Screenshots/SSH.png)
+
+    **Test erfolgreich!**
+
+---
+
+* Zweiter Testfall
+    * Wir wollen natürlich auch überprüfen, ob die IP-Adresse bei den verschiedenen VM's stimmt.
+
+    Zuerst auf dem Datenbank-Server wieder:
+
+    ![SSHDB](Screenshots/IP-DB.png)
+
+    Natürlich auch auf dem Web-Server:
+
+    ![SSHWEB](Screenshots/IP-Web.png)
+
+    **Test erfolgreich!**
+
+---
+
+* Dritter Testfall
+    * Nun testen wir, ob wir auf die verschiedene Services zugreifen können.
+
+    Wir können beides in einem testen, da die Datenbank auf der Webseite vom Web-Server läuft.
+
+    ![SSHWEB](Screenshots/DB-Web.png)
+
+    **Test erfolgreich!**
+
+---
 
 `Sicherheit`
 
