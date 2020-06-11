@@ -27,7 +27,7 @@
 | Version 3   | Wichtige Lernschritte (Vagrant) eingefügt & Befehle |
 | Version 4   | Dokumentation Umgebung (Netzwerkplan, Sicherheitsaspekte usw.)|
 | Version 5   | Dokumentation weitergemacht & Screenshots eingefügt|
-
+| Version 6   | Design überarbeitet & Sicherheitaspekte eingefügt|
 ---
 **Wichtige Lernschritte**
 
@@ -144,7 +144,10 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
 
 * Datenbank Server bzw. MySQL ist mit Password geschützt.
 * Der Web Server ist offen und mittels ungeschütztem HTTP Protokoll erreichbar.
-
+* Es wurde auf den VM's eine Firewall inkl. Rules eingerichtet. 
+* Eine Reverse-Proxy wurde ebenso eingerichtet. 
+* Benutzer- und Rechtvergaben wurden auf den verschiedenen VM's installiert. 
+* Der Zugang per SSH wird gesichert, sodass eine Sichere Verbindung steht.
 
 
 
