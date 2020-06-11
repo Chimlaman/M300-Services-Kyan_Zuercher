@@ -149,6 +149,6 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
 * Benutzer- und Rechtvergaben wurden auf den verschiedenen VM's installiert. 
 * Der Zugang per SSH wird gesichert, sodass eine Sichere Verbindung steht.
 
-
+---
 
 [1]: https://stackoverflow.com/ "Stackoverflow"
