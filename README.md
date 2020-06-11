@@ -24,12 +24,14 @@
 | ------ | ----------- |
 | Version 1  | Persönlicher Wissenstand eingefügt |
 | Version 2 | Design & Wichtige Lernschritte (Git) eingefügt |
-| Version 3   | Wichtige Lernschritte (Vagrant) eingefügt |
+| Version 3   | Wichtige Lernschritte (Vagrant) eingefügt & Befehle |
+| Version 4   | Dokumentation Umgebung (Netzwerkplan, Sicherheitsaspekte usw.)|
 
 ---
 **Wichtige Lernschritte**
 
 Es gibt einige wichtige Schritte die während der Installation und der Konfiguration gebraucht wurden:
+
 
 `Git`
 
@@ -41,7 +43,18 @@ git status
 ```
 Der Commit Befehl lädt alle die Daten und der Push Befehl kopiert es auf die Gitseite. Der Gitstatus ist auch ein sehr wichtiger Befehl, denn mit diesem kann man immer überprüfen, ob es noch Probleme gibt.
 
+`Vagrant`
 
+Natürlich gibts in Vagrant auch viele wichtige Schritte die ich gelernt habe und zwar:
+```
+vagrant up
+vagrant status
+vagrant ssh <Name>
+vagrant halt -f
+vagrant destroy -f
+```
+Der "Vagrant up" Befehl erstellt die VM's die im Vagrantfile angegeben sind. Das Erstellen der VM's dauert eine gewisse Zeit. Danach sollte man mit dem "Vagrant Status", denn Status überprüfen, ob alles einwandfrei funktioniert hat. Mit dem Befehl "Vagrant ssh <Name der VM>" kann man direkt eine Verbindung per SSH aufbauen, danach kann man alle Information von der VM beziehen wie z. B. die OS Version der zugewiesene Port für die Webseite usw. Der Befehl "Vagrant halt -f" schaltet alle VM's aus, sprich fährt sie herunter. Der "Vagrant destroy -f" löscht alle erstelle VM's durch Vagrant, somit ist es sehr einfach alle wieder zu löschen.
+---
 
 
 [1]: https://stackoverflow.com/ "Stackoverflow"
