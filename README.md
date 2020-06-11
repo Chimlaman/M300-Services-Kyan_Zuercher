@@ -63,7 +63,7 @@ Der "Vagrant up" Befehl erstellt die VM's die im Vagrantfile angegeben sind. Das
 
 Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem, die meist Pfade zu bestimmen Programme oder Daten enthalten. 
 
-test
+---
 
 `Netzwerkplan`
 
