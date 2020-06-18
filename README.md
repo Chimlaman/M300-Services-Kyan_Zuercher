@@ -28,6 +28,7 @@
 | Version 4   | Dokumentation Umgebung (Netzwerkplan, Sicherheitsaspekte usw.)|
 | Version 5   | Dokumentation weitergemacht & Screenshots eingefügt|
 | Version 6   | Design überarbeitet & Sicherheitaspekte eingefügt|
+| Version 7   | Reflexion dokumentiert & Design überarbeitet|
 ---
 **Wichtige Lernschritte**
 
@@ -150,5 +151,12 @@ Eine Umgebungs-Variable ist eine konfiguierbare Variable in einem Betriebssystem
 * Der Zugang per SSH wird gesichert, sodass eine Sichere Verbindung steht.
 
 ---
+
+`Reflexion`
+
+Dieses Modul gefällt mir bisher sehr, denn man kann selbstständig Arbeiten und sich das Wisen selbst aneignen. ANfangs war es noch ziemlich schwer das zu verstehen wie das überhaup funktioniert, jedoch mit ein wenig Googlen und mit dem Video das uns zu Verfügung gestellt wurde, ging es einfacher. Ich hatte anfangs auch Probleme mit dem "Git Bash", denn ich hatte zuvor noch nie mit dem gearbeitet. Die Dokumentation im Markdown habe ich ziemlich gut hinbekommen, denn gerade in der Dokumentation bin ich sehr stark unterwegs und somit war das ziemlich einfach. Zudem hatte ich auch ein wenig Probleme beim Vagrant-File, jedoch auch mit ein wenig Googlen konnte ich das sehr gut lösen. 
+
+Ich konnte mir vorallem in dem Bereich "Github" viel Wissen aneigenen, denn auch das wird sehr oft verwendet, gerade für die Datenverteilung ist "Github" sehr wichtig.
+
 
 [1]: https://stackoverflow.com/ "Stackoverflow"
