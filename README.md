@@ -29,6 +29,7 @@
 | Version 5   | Dokumentation weitergemacht & Screenshots eingefügt|
 | Version 6   | Design überarbeitet & Sicherheitaspekte eingefügt|
 | Version 7   | Reflexion dokumentiert & Design überarbeitet|
+| Version 8   | Wissenzuwachs dokumentiert|
 ---
 **Wichtige Lernschritte**
 
@@ -158,5 +159,8 @@ Dieses Modul gefällt mir bisher sehr, denn man kann selbstständig Arbeiten und
 
 Ich konnte mir vorallem in dem Bereich "Github" viel Wissen aneigenen, denn auch das wird sehr oft verwendet, gerade für die Datenverteilung ist "Github" sehr wichtig.
 
+`Wissenzuwachs`
+
+Ich konnte in dieser LB02 gerade im Bereich von "Git-Hub" und "Vagrant" sehr viel neues lernen. Im Vagrant kann ich nun das Vagrant-File anpassen, sowie einige Befehle z. B. zum starten, löschen oder herunterzufahren. In "Github" konnte ich sehr viel lernen und nun auch anwenden. Anfangs hatte ich keinen Plan wie man überhaupt eine veränderte Datei wieder hochladet, nun kann ich das mittlerweile im Schlaf. Gerade auch im Bereich Markdown konnte ich auch einiges dazu lernen, denn gerade am Design hat man nicht so viele möglichkeiten, jedoch habe ich das beste finde ich draus gemacht.
 
 [1]: https://stackoverflow.com/ "Stackoverflow"
