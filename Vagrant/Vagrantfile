@@ -45,6 +45,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 		echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
 		sudo a2enconf adminer.conf 
 		sudo service apache2 restart 
+		# Firewall
+		sudo apt-get install ufw
+		sudo ufw allow 80/tcp
+		sudo ufw allow from "192.168.1.46" to any port 22
+		sudo ufw allow from "192.168.1.46" to any port 3306
+		sudo ufw enable
+		# Reverse-Proxy eingerichtet
+		sudo apt-get install libxml2-dev
+		sudo a2enmod proxy
+		sudo a2enmod proxy_html
+		sudo a2enmod proxy_http
+		echo "Server Name localhost" >> /etc/apache2/apache2.conf
+		sudo service apache2 restart
+		# Benutzer- & Rechteverwaltung
+		
 	  echo '127.0.0.1 localhost web01\n192.168.55.100 db01' > /etc/hosts
 SHELL
 	end  
