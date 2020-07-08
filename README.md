@@ -18,6 +18,18 @@
 * Systemsicherheit
 
     * Es gibt viele Systemsicherheiten die man mit Vagrant und Git hat, denn es ist auch wichtig das man diese Sicherheit hat. In Vagrant selbst hat man die Möglichkeit alle Passwort zu schützen oder auch im Internet Sicherheit zu gewährleistet mit einer Firewall. Auf Git hat man nur die Möglichkeit änderungen zu machen, wenn der Benutzer auch wirklich Berechtigung hat.
+
+* Containierisierung
+
+    * Die Containiersierung erlaubt es auf einer Maschine verschiedene Kontexte zu haben die unabhängig von einander sind. Es können somti auf einer Hardware unterschiedliche Applikationen unabhängig voneinander laufen. Jeder Maschine kann anders konfiguriert werden. Zudem kann man die Containierisierung problemlos auf jedem Maschinentyp installieren. Es gibt jedoch auch Nachteile denn z. B. muss man die Dateisystem Schichtung kennen und somit auch das Konzept davon, sonst stosst dman schnell ans Ende bevor man überhaupt einen Container aufgesetzt hat.
+
+* Docker
+
+    * Docker ist eine Software mit der man eine Container-Virtualisiuerung von Anwendungen ermöglicht. Die verschiedene Anwedungen können in verschiedene Images gepackt werden, durch das hat man die Möglichkeit die verschiedene Anwedungen in einer Docker Container auszuführen. Die Applikation wird somit isoliert, sprich man kann verschiedene Container aus einem Image erstellen die unabhänig laufen. Die Docker sind auch sehr skalierbar z- B. diese auf einen Cloud-Dienst bereitzustellen. Si enthalten nur die Informationen die auch gebraucht werden. Der Container enthählt nicht mehr und weniger als nötig. 
+
+* Microservices
+
+    * Die Microservices sind sehr leicht zu ersetzten und somit sehr gut zu gebrauchen. Man hat somit die Möglichkeit ein Dienst innerhalb kurzer Zeit zu ersetzen oder neu zu erstellen. Jeder Microservice implementiert genau eine Funktion der Nutzer steht jedoch im Mittelpunkt. Die Microservices sind zudem von allen anderem isoliert wie z. B. Dienste und Prozesse. Die Microservices müssen auch überwacht werden. Man kann diese überwachen in dem man diese Monitort oder das Logging aktiviert.
 ---
 **Versionverwaltung**
 | Version| Kommentar| 
